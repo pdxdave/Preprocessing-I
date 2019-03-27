@@ -1,1 +1,296 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #212529;
+}
+#wrapper {
+  max-width: 888px;
+  width: 97%;
+  margin: 0 auto;
+}
+p {
+  line-height: 1.5;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 80px;
+}
+@media (max-width: 500px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.nav li {
+  list-style-type: none;
+}
+.nav li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin-left: 30px;
+  line-height: 80px;
+  color: #212529;
+}
+.header {
+  background-color: #e9ecef;
+  padding: 60px 30px 80px 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.header .my--name h1 {
+  font-size: 3.2rem;
+  font-weight: 300;
+  padding: 5px 0 20px 0;
+}
+.header .my--name h3 {
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+.header .line-break {
+  margin: 30px 0;
+  height: 1px;
+  background-color: #d1d4d7;
+  width: 100%;
+}
+.header .btn {
+  background-color: #808080;
+  font-size: 1.2rem;
+  padding: 10px 16px;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: capitalize;
+  margin-top: 24px;
+}
+.bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bio .about-me {
+  width: 430px;
+}
+.bio .about-me h2 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+.bio .skills {
+  width: 430px;
+}
+@media (max-width: 886px) {
+  .bio .skills {
+    padding-top: 30px;
+  }
+}
+.bio .skills h3 {
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+.bio .skills .list li:not(:nth-child(1)) {
+  border-left: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  border-right: 1px solid #e9ecef;
+}
+.bio .skills .list li:nth-child(1) {
+  border-top: 1px solid #e9ecef;
+  border-left: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  border-right: 1px solid #e9ecef;
+}
+.bio .skills .list li {
+  height: 48px;
+  line-height: 48px;
+  padding-left: 16px;
+}
+.work-history {
+  width: 100%;
+  padding-top: 45px;
+}
+.work-history h3 {
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+.work-history table {
+  width: 100%;
+}
+.work-history table .table--head tr th {
+  font-weight: bold;
+  text-align: left;
+}
+.work-history table .table--body tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.work-history table .table--body tr td:nth-child(1) {
+  font-weight: bold;
+}
+.work-history table .table--body tr td,
+.work-history table .table--head tr th {
+  padding-left: 10px;
+}
+.work-history table .table--body tr,
+.work-history table .table--head tr {
+  height: 50px;
+  line-height: 50px;
+}
+.work-history table .table--head tr {
+  border-top: 1px solid #e9ecef;
+}
+.work-history table .table--body tr:not(:nth-child(3)) {
+  border-top: 1px solid #e9ecef;
+}
+.footer {
+  height: 100px;
+  background-color: #808080;
+  text-align: center;
+  color: #fff;
+  margin-top: 32px;
+}
+.footer p {
+  padding-top: 20px;
+}
+.footer span {
+  margin: 0 5px;
+}
+.footer span a {
+  color: #fff;
+}
+.footer .contact {
+  padding-top: 10px;
+}
