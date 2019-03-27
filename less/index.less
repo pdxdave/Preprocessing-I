@@ -107,7 +107,7 @@ p {
 			color: @font-color;
 		}
 	}
-  }
+  } // end of nav
 
   .header {
 	  background-color: @light-gray;
@@ -143,7 +143,7 @@ p {
 		text-transform: capitalize;
 		margin-top: 24px;
 	  }
-  }
+  }// end of header
 
   
 
@@ -183,4 +183,42 @@ p {
 			padding-left: 16px;
 		}
 	}
-}
+} // end of bio
+
+.work-history {
+	width: 100%;
+	padding-top: 45px;
+	h3 {
+		font-size: 1.6rem;
+		padding-bottom: 10px;
+	}
+
+	table {
+		width: 100%;
+	
+		.table--head tr th {
+			font-weight: bold;
+			text-align: left;
+		}
+		.table--body tr:nth-child(odd) {
+		background-color: @table-gray;
+		}
+		.table--body tr td:nth-child(1){
+			font-weight: bold;
+		}
+		.table--body tr td, .table--head tr th{
+			padding-left: 10px;
+		}
+		.table--body tr , .table--head tr {
+			height: 50px;
+			line-height: 50px;
+		}
+		
+		.table--head tr {
+			border-top: 1px solid @light-gray;
+		}
+		.table--body tr:not(:nth-child(3)){
+			border-top: 1px solid @light-gray;
+		}
+    }
+} // end of work history
