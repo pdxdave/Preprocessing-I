@@ -114,7 +114,7 @@ p {
 	  padding: 60px 30px 80px 30px;
 	  border-radius: 5px;
 	  margin-bottom: 30px;
-	  
+
 	  .my--name {
 		h1{
 			font-size: 3.2rem;
@@ -146,3 +146,41 @@ p {
   }
 
   
+
+.bio {
+	.flex-wrap(row, space-between, wrap);
+
+	.about-me {
+		
+		width: 430px;
+		h2 {
+			font-size: 2rem;
+			padding-bottom: 20px;
+		}
+	}
+	.skills {
+		
+		width: 430px;
+		h3 {
+			font-size: 1.6rem;
+			padding-bottom: 10px;
+		}
+
+		.list li:not(:nth-child(1)){
+			border-left: 1px solid @light-gray;
+			border-bottom: 1px solid @light-gray;
+			border-right: 1px solid @light-gray;
+		}
+		.list li:nth-child(1){
+			border-top: 1px solid @light-gray;
+			border-left: 1px solid @light-gray;
+			border-bottom: 1px solid @light-gray;
+			border-right: 1px solid @light-gray;
+		}
+		.list li {
+			height: 48px;
+			line-height: 48px;
+			padding-left: 16px;
+		}
+	}
+}

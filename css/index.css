@@ -191,3 +191,39 @@ p {
   text-transform: capitalize;
   margin-top: 24px;
 }
+.bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bio .about-me {
+  width: 430px;
+}
+.bio .about-me h2 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+.bio .skills {
+  width: 430px;
+}
+.bio .skills h3 {
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+.bio .skills .list li:not(:nth-child(1)) {
+  border-left: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  border-right: 1px solid #e9ecef;
+}
+.bio .skills .list li:nth-child(1) {
+  border-top: 1px solid #e9ecef;
+  border-left: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  border-right: 1px solid #e9ecef;
+}
+.bio .skills .list li {
+  height: 48px;
+  line-height: 48px;
+  padding-left: 16px;
+}
