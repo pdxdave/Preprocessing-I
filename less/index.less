@@ -68,3 +68,27 @@ html, body {
 
 // Text
 @font-family: 'Roboto', sans-serif;
+
+
+#wrapper {
+	max-width: 888px;
+	width: 97%;
+	margin: 0 auto;
+}
+
+.flex(@direction, @justify){
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+}
+
+.flex-wrap(@direction, @justify, @wrap){
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+	flex-wrap: @wrap;
+}
+
+p {
+	line-height: 1.5;
+}

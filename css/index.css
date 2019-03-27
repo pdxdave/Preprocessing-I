@@ -136,3 +136,11 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #212529;
 }
+#wrapper {
+  max-width: 888px;
+  width: 97%;
+  margin: 0 auto;
+}
+p {
+  line-height: 1.5;
+}
