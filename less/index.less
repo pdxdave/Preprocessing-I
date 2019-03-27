@@ -69,6 +69,8 @@ html, body {
 // Text
 @font-family: 'Roboto', sans-serif;
 
+// Escape
+@mobile:(max-width: 500px);
 
 #wrapper {
 	max-width: 888px;
@@ -96,6 +98,11 @@ p {
 .nav {
 	.flex(row, flex-end);
 	 height: 80px;
+
+	 @media @mobile {
+		 .flex(row, space-around);
+	 }
+
 	li {
 		list-style-type: none;
 		a {
@@ -159,6 +166,10 @@ p {
 		}
 	}
 	.skills {
+
+		@media(max-width: 886px){
+				padding-top: 30px;
+		}
 		
 		width: 430px;
 		h3 {

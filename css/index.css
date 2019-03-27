@@ -150,6 +150,13 @@ p {
   justify-content: flex-end;
   height: 80px;
 }
+@media (max-width: 500px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .nav li {
   list-style-type: none;
 }
@@ -206,6 +213,11 @@ p {
 }
 .bio .skills {
   width: 430px;
+}
+@media (max-width: 886px) {
+  .bio .skills {
+    padding-top: 30px;
+  }
 }
 .bio .skills h3 {
   font-size: 1.6rem;
