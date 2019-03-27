@@ -144,3 +144,20 @@ body {
 p {
   line-height: 1.5;
 }
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 80px;
+}
+.nav li {
+  list-style-type: none;
+}
+.nav li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin-left: 30px;
+  line-height: 80px;
+  color: #212529;
+}
